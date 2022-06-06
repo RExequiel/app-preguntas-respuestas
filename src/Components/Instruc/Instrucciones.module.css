@@ -1,32 +1,24 @@
 .container{
-    display:block;
+    text-align: center;
 }
 
 .titulo{
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: 900;
     color:#020253;
 }
 
-.containerImg{
-    display:flex;
-    justify-content: center;
-}
 
-.img{
-    background-image: url('../Assets/calavera.png');
-    background-size: cover;
-    width:300px;
-    height: 280px;
+.items li{
+    color: #fff;
 }
 
 .buttonContainer{
     display:flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 70px;
 }
-
 .a{
     text-decoration: none;
     font-size: 40px;
@@ -47,10 +39,25 @@ a:active{
     background-color: #48e;
 }
 
+
 @media screen and (min-width:426px) {
-    .titulo{
-        font-size: 50px;
+    .container{
+        text-align: justify;
+    }
+
+    .items{
+        margin-left: 40px;
     }
     
+    .items li{
+        font-size: 20px;
+    }
+   
+}
+
+@media screen and (min-width:1200px) {
+    .items{
+        margin-left: 200px;
+    }
 }
 

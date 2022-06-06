@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './PrincipalPage.module.css';
-import img from './imagenPortada.webp';
+import img from './cultura.png';
 import {Link} from 'react-router-dom';
 
 
@@ -14,7 +14,7 @@ const PrincipalPage = () => {
         </div>
         <div className={style.containerBotones}>
             <div>
-                <Link to='/' className={style.a}>Instrucciones</Link>
+                <Link to='instrucciones' className={style.a}>Instrucciones</Link>
             </div>
             <br />
             <div>

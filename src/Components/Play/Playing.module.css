@@ -78,3 +78,17 @@ h2{
     }
     
 }
+
+@media screen and (min-width:720px) {
+    .countContainer{
+        padding: 50px;
+        
+    }
+    .preguntaContainer{
+        padding: 50px;
+    }
+    
+    .buttonContainer{
+        padding: 50px;
+    }
+}
