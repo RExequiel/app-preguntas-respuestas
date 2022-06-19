@@ -13,7 +13,7 @@ const Playing = () => {
 
     useEffect(()=>{
         let cuentaAtras = setInterval(() => {
-            tiempo > 0 ? setTiempo(tiempo -1) : setGameOver(window.location.href='gameover');
+            tiempo > 0 ? setTiempo(tiempo -1) : setGameOver(window.location.href='/gameover');
         }, 1000);
         return()=>clearInterval(cuentaAtras);
     },[tiempo, puntos]);
@@ -27,7 +27,7 @@ const Playing = () => {
     const mal=()=>{
         speechSynthesis.speak(new SpeechSynthesisUtterance('¡¡¡RESPUESTA INCORRECTA!!!'));
         setAleatorio(Math.round(Math.random()*100));
-        setVidas(vidas > 1 ? vidas - 1 : setGameOver(window.location.href='gameover'));
+        setVidas(vidas > 1 ? vidas - 1 : setGameOver(window.location.href='/gameover'));
         setTiempo(20);
         
     };

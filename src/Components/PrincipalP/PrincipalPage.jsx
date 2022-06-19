@@ -14,11 +14,11 @@ const PrincipalPage = () => {
         </div>
         <div className={style.containerBotones}>
             <div>
-                <Link to='instrucciones' className={style.a}>Instrucciones</Link>
+                <Link to='/instrucciones' className={style.a}>Instrucciones</Link>
             </div>
             <br />
             <div>
-                <Link to='playing' className={style.a}>Jugar</Link>
+                <Link to='/playing' className={style.a}>Jugar</Link>
             </div>
         </div>
         </>
