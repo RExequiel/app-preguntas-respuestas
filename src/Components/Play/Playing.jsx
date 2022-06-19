@@ -38,7 +38,7 @@ const Playing = () => {
         <>
             {Preguntas.map(preguntando=>(
                 preguntando.id===aleatorio?
-                    <>
+                    <div key={preguntando.id}>
                         <div className={style.countContainer}>
                             <h2>Tiempo: {tiempo}</h2>
                             <h2>Puntos: {puntos}</h2>
@@ -60,7 +60,7 @@ const Playing = () => {
                             <button className={style.boton} onClick={()=>preguntando.respuesta2===preguntando.solucion ? bien() : mal() }>{preguntando.respuesta2}</button>
                             <button className={style.boton} onClick={()=>preguntando.respuesta3===preguntando.solucion ? bien() : mal() }>{preguntando.respuesta3}</button>
                         </div>
-                    </>
+                    </div>
                 :null
             ))}
         </>

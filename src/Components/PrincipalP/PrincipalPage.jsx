@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './PrincipalPage.module.css';
 import img from './cultura.png';
-import {Link} from 'react-router-dom';
+import {Link, Outlet} from 'react-router-dom';
 
 
 const PrincipalPage = () => {
@@ -21,6 +21,7 @@ const PrincipalPage = () => {
                 <Link to='/playing' className={style.a}>Jugar</Link>
             </div>
         </div>
+        <Outlet />
         </>
      );
 }
