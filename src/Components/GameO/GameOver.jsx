@@ -1,9 +1,9 @@
-import React from 'react'
-import style from './GameOver.module.css'
-import {Link} from 'react-router-dom'
-import music from '../Assets/gameover.mp3'
+import React from 'react';
+import style from './GameOver.module.css';
+import {Link} from 'react-router-dom';
+import music from '../Assets/gameover.mp3';
 
-const GameOver = (props) => {
+const GameOver = () => {
     return (
         <>
             <div className={style.container}>
@@ -22,4 +22,4 @@ const GameOver = (props) => {
     )
 }
 
-export default GameOver
+export default GameOver;
